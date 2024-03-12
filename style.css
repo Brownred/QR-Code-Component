@@ -1,0 +1,95 @@
+/* Resetting default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+/* color variables */
+:root {
+    --color-white: hsl(0, 0%, 100%);
+    --color-light-gray: hsl(212, 45%, 89%);
+    --color-grayish-blue: hsl(220, 15%, 55%);
+    --color-dark-blue: hsl(218, 44%, 22%);
+  }
+  
+  /* font family */
+.font-400 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  line-height: auto;
+  margin: auto;
+  font-size: 15px;
+  letter-spacing: 0.19px;
+  line-height: 1px;
+  color: var(--color-grayish-blue);
+}
+
+.font-700 {
+  display: flex;
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  flex-wrap: wrap;
+  line-height: auto;
+  margin: auto;
+  font-size: 22px;
+  letter-spacing: 0;
+  line-height: 1px;
+  color: var(--color-dark-blue);
+}
+
+/* Mobile layout */
+@media (max-width: 375px) {
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: var(--color-grayish-blue);
+      height: 667px;
+      width: 375px;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      background-color: var(--color-white);
+      border-radius: 20px;
+      margin: auto;
+      width: 320px;
+      height: 497px;
+    }
+
+    .qr-code {
+      display: flex;
+      margin-top: 16px;
+      border-radius: 20px;
+      height: 288px;
+      width: 288px;
+    }
+
+    .text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+      width: 288px;
+      height: 129px;
+    }
+  }
+  
+
+  /* Desktop layout */
+  @media (min-width: 376px) and (max-width: 1440px) {
+    /* Add specific desktop styles here */
+  }
+  
+  /* Styles for content to ensure responsiveness */
+  /* This could include rules like max-width, padding, margins, etc. */
+  
