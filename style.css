@@ -28,29 +28,26 @@
 }
 
 .font-700 {
-  display: flex;
   font-family: "Outfit", sans-serif;
   font-optical-sizing: auto;
   font-weight: 700;
   font-style: normal;
-  flex-wrap: wrap;
-  line-height: auto;
-  margin: auto;
+  text-align: left;
+  text-wrap: wrap;
   font-size: 22px;
   letter-spacing: 0;
   line-height: 1px;
   color: var(--color-dark-blue);
 }
 
-/* Mobile layout */
-@media (max-width: 375px) {
+
     .container {
       display: flex;
       align-items: center;
       justify-content: center;
       background-color: var(--color-grayish-blue);
       height: 667px;
-      width: 375px;
+      min-width: 375px;
     }
 
     .card {
@@ -78,18 +75,12 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin-top: 20px;
+      margin: 24px 16px 40px;
       width: 288px;
       height: 129px;
     }
-  }
-  
 
-  /* Desktop layout */
-  @media (min-width: 376px) and (max-width: 1440px) {
-    /* Add specific desktop styles here */
-  }
-  
-  /* Styles for content to ensure responsiveness */
-  /* This could include rules like max-width, padding, margins, etc. */
-  
+    .font-700 {
+      align-self: flex-start;
+      
+    }
