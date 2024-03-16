@@ -19,11 +19,9 @@
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  line-height: auto;
   margin: auto;
   font-size: 15px;
   letter-spacing: 0.19px;
-  line-height: 1px;
   color: var(--color-grayish-blue);
 }
 
@@ -36,8 +34,15 @@
   text-wrap: wrap;
   font-size: 22px;
   letter-spacing: 0;
-  line-height: 1px;
   color: var(--color-dark-blue);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
 }
 
 
@@ -46,8 +51,8 @@
       align-items: center;
       justify-content: center;
       background-color: var(--color-grayish-blue);
-      height: 667px;
-      min-width: 375px;
+      min-height: 100vh;
+      width: 100%;
     }
 
     .card {
@@ -78,9 +83,4 @@
       margin: 24px 16px 40px;
       width: 288px;
       height: 129px;
-    }
-
-    .font-700 {
-      align-self: flex-start;
-      
     }
